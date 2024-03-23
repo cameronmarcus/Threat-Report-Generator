@@ -60,12 +60,14 @@ template = """Produce a summary of recent news articles relating to the followin
 Use only reports relevant to the descriptions of these news articles on the threat actor:
 {context}
 
-Make the summaries 20-30 sentences long and use natural language.  
+Make the summaries 40-50 sentences long and use natural language. Make sure to include what
+specific activity the actor has been seen doing, who specifically they are targeting, and 
+what nation state they are tied to.
 """
 
 prompt = ChatPromptTemplate.from_template(template)
 
-model = ChatOpenAI()
+model = ChatOpenAI(model='gpt-4-turbo-preview', temperature=0)
 
 #Explanation of metadata
 metadata_field_info = [
