@@ -3,7 +3,7 @@ Retrieves recent news articles on specified threat actor and generates a summary
 
 1. Run run.py
 2. Enter desired threat actor you want reporting on
-3. Program retrieves k most recent news articles on threat actor and summarizes.
+3. Program retrieves k most recent news articles on threat actor and summarizes
 
 See output_report for example output
 
